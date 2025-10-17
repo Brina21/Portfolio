@@ -1,9 +1,10 @@
 <?php
+/*
     // Verifica si la sesión ya está iniciada; si no, la inicia
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
-
+*/
     include("datos.php");
 
     // UD4.b: comprobar usuario y contraseña del json
@@ -29,8 +30,7 @@
 
                     // UD4.e: Almacenar cookie
                     $loginOk = true;
-                    // Guardar en la sesión
-                    $_SESSION['user_email'] = $emailInput;
+                    
                     // Guardar también en una cookie que usa el resto de la app
                     // Debe establecerse antes de enviar cualquier salida (aquí aún no se ha incluido header.php)
                     setcookie('user_email', $emailInput, time() + 3600, "/");
