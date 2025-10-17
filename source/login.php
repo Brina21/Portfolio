@@ -5,7 +5,6 @@
     }
 
     include("datos.php");
-    include("templates/header.php");
 
     // UD4.b: comprobar usuario y contraseña del json
     $usuarios = json_decode(file_get_contents("usuarios.json"), true);
@@ -30,11 +29,16 @@
 
                     // UD4.e: Almacenar cookie
                     $loginOk = true;
+                    // Guardar en la sesión
                     $_SESSION['user_email'] = $emailInput;
+                    // Guardar también en una cookie que usa el resto de la app
+                    // Debe establecerse antes de enviar cualquier salida (aquí aún no se ha incluido header.php)
+                    setcookie('user_email', $emailInput, time() + 3600, "/");
                 }
 
                 break;
             }
+            
         }
 
         // UD4.d: Mensajes de error
@@ -44,6 +48,16 @@
             $errorPass = "Contraseña incorrecta.";
         }
     }
+
+
+    // UD4.c: Redirección tras login exitoso - ANTES del header
+    if($loginOk) {
+        // Usar redirección HTTP para que las cabeceras (cookies/sesión) se envíen correctamente
+        header('Location: contacto_lista.php');
+        exit; // Detiene la ejecución del resto del código
+    }
+
+    include("templates/header.php");
 ?>
 
 <style>
@@ -89,14 +103,6 @@
         margin-top: 0.25rem;
     }
 </style>
-
-<!-- UD4.c: Redirección tras login exitoso -->
-<?php if($loginOk): ?>
-    <script>
-        // redirigir a la página de Administración con JS
-        window.location.href = 'contacto_lista.php';
-    </script>
-<?php endif; ?>
 
 <!-- UD4.a: Formulario de Login -->
 <div class="contenedor">

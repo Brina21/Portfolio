@@ -14,7 +14,7 @@
     <h2>Área de Administración</h2>
     <p>Bienvenido, <?php echo $_COOKIE['user_email']; ?>.</p>
     
-    <a href="index.php" class="btn btn-primary">Volver</a>
+    <a href="index.php" class="btn btn-primary">Inicio</a>
 </div>
 
 <?php include('templates/footer.php'); ?>
