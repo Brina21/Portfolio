@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 6,
+        "clave" : "rueda",
+        "titulo" : "Llantas de aleación 18\"",
+        "descripcion" : "Llantas de aleación ligera que mejoran la estética.",
+        "imagen" : "static/llantas-18.jpg",
+        "dinero" : 850,
+        "fecha" : "2025-09-22"
+    },
+    {
+        "id" : 7,
+        "clave" : "rueda",
+        "titulo" : "Neumáticos deportivos",
+        "descripcion" : "Neumáticos de alto agarre para conducción deportiva.",
+        "imagen" : "static/neumaticos.jpg",
+        "dinero" : 500,
+        "fecha" : "2025-09-02"
+    },
+    {
+        "id" : 8,
+        "clave" : "exterior",
+        "titulo" : "Kit de carrocería",
+        "descripcion" : "Spoiler, faldones y difusores que mejoran la aerodinámica y estética.",
+        "imagen" : "static/kit-carroceria.jpg",
+        "dinero" : 1000,
+        "fecha" : "2025-09-10"
+    },
+    {
+        "id" : 9,
+        "clave" : "interior",
+        "titulo" : "Palanca cambios short shift",
+        "descripcion" : "Reduce el recorrido de la palanca para cambios más rápidos.",
+        "imagen" : "static/palanca-short.jpg",
+        "dinero" : 2000,
+        "fecha" : "2025-09-30"
+    },
+    {
+        "id" : 10,
+        "clave" : "iluminacion",
+        "titulo" : "Faros LED",
+        "descripcion" : "Faros LED delanteros con luz blanca y diseño agresivo.",
+        "imagen" : "static/faros-led.jpg",
+        "dinero" : 1500,
+        "fecha" : "2025-09-29"
+    }
+]

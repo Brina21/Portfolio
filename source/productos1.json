@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 1,
+        "clave" : "suspension",
+        "titulo" : "Kit suspensión deportiva",
+        "descripcion" : "Suspensión ajustable que mejora la estabilidad y el control del vehículo.",
+        "imagen" : "static/kit-susp-deport.jpg",
+        "dinero" : 3500,
+        "fecha" : "2025-09-20"
+    },
+    {
+        "id" : 2,
+        "clave" : "suspension",
+        "titulo" : "Amortiguadores de alto rendimiento",
+        "descripcion" : "Amortiguadores que reducen los balanceos y mejoran la respuesta del vehículo.",
+        "imagen" : "static/amortiguadores.jpg",
+        "dinero" : 2200,
+        "fecha" : "2025-09-19"
+    },
+    {
+        "id" : 3,
+        "clave" : "escape",
+        "titulo" : "Escape deportivo",
+        "descripcion" : "Sistema de escape que mejora el flujo de gases y aumenta el sonido del motor.",
+        "imagen" : "static/esc-deportivo.jpg",
+        "dinero" : 3200,
+        "fecha" : "2025-09-13"
+    },
+    {
+        "id" : 4,
+        "clave" : "motor",
+        "titulo" : "Filtro de aire de alto flujo",
+        "descripcion" : "Filtro de aire que mejora la entrada de aire al motor y aumenta la potencia.",
+        "imagen" : "static/filtro-aire-dep.jpg",
+        "dinero" : 200,
+        "fecha" : "2025-09-14"
+    },
+    {
+        "id" : 5,
+        "clave" : "motor",
+        "titulo" : "ECU reprogramada",
+        "descripcion" : "Reprogramación de la centralita para aumentar potencia.",
+        "imagen" : "static/ecu.jpg",
+        "dinero" : 955,
+        "fecha" : "2025-09-27"
+    }
+]
