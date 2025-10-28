@@ -47,6 +47,9 @@
                                 }
                             ?>
                         </p>
+                        <?php if($logedIn): ?>
+                            <a href="editar_proyecto.php?id=<?= $id ?>" class="btn btn-warning">Editar</a>
+                        <?php endif; ?>
                         <a href="proyectoIndividual.php?id=<?= $id ?>" class="btn btn-primary">Ver más</a>
                     </div>
                     

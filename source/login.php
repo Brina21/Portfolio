@@ -1,10 +1,9 @@
 <?php
-/*
     // Verifica si la sesión ya está iniciada; si no, la inicia
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
     }
-*/
+
     include("datos.php");
 
     // UD4.b: comprobar usuario y contraseña del json

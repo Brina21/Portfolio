@@ -40,6 +40,8 @@
     <a class="btn btn-primary btn-lg mx-2" href="index.php?orden=asc" role="button">Ordenar Ascendente</a>
     <a class="btn btn-primary btn-lg mx-2" href="index.php?orden=desc" role="button">Ordenar Descendente</a>
     <a class="btn btn-danger btn-lg mx-2" href="?delete=true" role="button">Eliminar último elemento</a>
+    <a class="btn btn-primary btn-lg mx-2" href="crear_proyecto.php" role="button">Crear Proyecto</a>
+
 </div>
 
 <!-- Contenedor de proyectos -->
@@ -67,6 +69,9 @@
                         </p>
                         <?php if ($id): ?>
                             <a href="proyectoIndividual.php?id=<?= $id ?>" class="btn btn-primary">Ver más</a>
+                        <?php endif; ?>
+                        <?php if ($logedIn): ?>
+                            <a href="actualizar_proyecto.php?id=<?= $id ?>" class="btn btn-primary">Actualizar</a>
                         <?php endif; ?>
                     </div>
                 </div>
