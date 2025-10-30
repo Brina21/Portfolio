@@ -22,7 +22,7 @@
     
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-        // Sanitizar datos
+        // Saneamiento datos
         $clave = trim($_POST['clave']);
         $titulo = trim($_POST['titulo']);
         $descripcion = trim($_POST['descripcion']);

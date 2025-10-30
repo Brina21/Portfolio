@@ -85,7 +85,7 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li>
                             <a href="" class="dropdown-item">LISTA USUARIOS</a>
-                            <a href="" class="dropdown-item">USUARIO</a>
+                            <a href="usuario.php" class="dropdown-item">USUARIO</a>
                         </li>
                     </ul>
                 </li>

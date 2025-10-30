@@ -105,7 +105,7 @@
 
 <!-- UD4.a: Formulario de Login -->
 <div class="contenedor">
-    <form method="post">
+    <form method="POST">
         <h2 class="form-title">Iniciar sesión</h2>
 
         <div class="form-floating mb-3">

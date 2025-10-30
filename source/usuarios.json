@@ -1,7 +1,10 @@
 [
     {
         "user": "sabrina@gmail.com",
-        "pass": "1234"
+        "pass": "1234",
+        "nombre": "Sabrina",
+        "apellidos": "Apellido1 Apellido2",
+        "dni": "12345678X"
     },
     {
         "user": "usuario@gmail.com",
