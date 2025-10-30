@@ -49,9 +49,9 @@
         // Validación de imagen con ayuda de Chatgpt
         $imagenRuta = '';
         if (isset($_FILES["imagen"]) && $_FILES["imagen"]["error"] === 0) {
-            $allowedTypes = ['image/jpeg','image/png','image/gif'];
+            $allowedTypes = ['image/jpeg', 'image/jpg', 'image/png'];
             if (!in_array($_FILES["imagen"]["type"], $allowedTypes)) {
-                $errorImagen = "Solo se permiten imágenes JPG, PNG o GIF.";
+                $errorImagen = "Solo se permiten imágenes JPG y PNG.";
             } else {
                 $imagenNombre = basename($_FILES["imagen"]["name"]);
                 $imagenRuta = "static/" . $imagenNombre;

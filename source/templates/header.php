@@ -79,8 +79,15 @@
             <!-- UD4.a: Control de menú según autenticación -->
             <!-- UD4.c: en funcion de la cookie se muestra u oculta el apartado de administración -->
             <?php if($logedIn) { ?>
-                <li class="nav-item">
-                    <a href="contacto_lista.php" class="nav-link">ADMINISTRACIÓN</a>
+                <li class="nav-item dropdown">
+                    <a href="contacto_lista.php" class="nav-link dropdown-toggle" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">ADMINISTRACIÓN</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li>
+                            <a href="" class="dropdown-item">LISTA USUARIOS</a>
+                            <a href="" class="dropdown-item">USUARIO</a>
+                        </li>
+                    </ul>
                 </li>
                 
                 <li class="nav-item">
